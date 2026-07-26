@@ -1,4 +1,4 @@
-# travel-consensus-AI
+# travel-consensus-AI-Agent
 
 An agent that plans a group trip around everyone's constraints at once, shows
 who is compromising and by how much, replans in one shot when reality
