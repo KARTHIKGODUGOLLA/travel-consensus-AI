@@ -1,0 +1,518 @@
+{
+ "round1": {
+  "evaluations": [
+   {
+    "member_id": "priya",
+    "breakdown": [
+     {
+      "pref": "wants historical sites, museums and cultural landmarks",
+      "status": "unmet",
+      "why": "No museum, gallery or historical stop anywhere in the three days."
+     },
+     {
+      "pref": "prefers to be settled at the hotel by 10pm",
+      "status": "partial",
+      "why": "Day 1 settles at 21:00 but Day 2 runs to 22:30 after the taproom."
+     },
+     {
+      "pref": "wants lodging under $150 per night",
+      "status": "met",
+      "why": "SLO motel is $110 and Big Sur Lodge $185 averages under the $150 ceiling."
+     },
+     {
+      "pref": "enjoys independent coffee shops and slow mornings",
+      "status": "unmet",
+      "why": "No independent coffee stop and every morning starts with a drive."
+     }
+    ]
+   },
+   {
+    "member_id": "sam",
+    "breakdown": [
+     {
+      "pref": "wants nightlife, breweries and live music in the evenings",
+      "status": "met",
+      "why": "Taproom and live music in the SLO brewery district on Day 2."
+     },
+     {
+      "pref": "wants to keep lodging under $120 per night, budget-conscious",
+      "status": "met",
+      "why": "Motel at $110 is under his $120 ceiling."
+     },
+     {
+      "pref": "prefers late starts, nothing before 10am",
+      "status": "met",
+      "why": "No start before 09:30, Day 2 begins at 10:00."
+     },
+     {
+      "pref": "likes trying local craft beer and casual food",
+      "status": "met",
+      "why": "Craft beer flight plus casual roadhouse food."
+     }
+    ]
+   },
+   {
+    "member_id": "ana",
+    "breakdown": [
+     {
+      "pref": "wants scenic coastal viewpoints and nature stops",
+      "status": "met",
+      "why": "Bixby Creek Bridge viewpoint on Day 1."
+     },
+     {
+      "pref": "wants good independent coffee in the morning",
+      "status": "unmet",
+      "why": "No coffee stop appears anywhere in the itinerary."
+     },
+     {
+      "pref": "prefers a quiet place to work for an hour each afternoon",
+      "status": "unmet",
+      "why": "No quiet working block is scheduled on any day."
+     },
+     {
+      "pref": "wants at least one beach walk",
+      "status": "partial",
+      "why": "Santa Cruz beach cafe is coastal but there is no beach walk block."
+     }
+    ]
+   },
+   {
+    "member_id": "diego",
+    "breakdown": [
+     {
+      "pref": "wants notable local food stops, not chains",
+      "status": "met",
+      "why": "Big Sur roadhouse and Morro Bay harbour seafood, no chains."
+     },
+     {
+      "pref": "wants golden-hour photography locations",
+      "status": "partial",
+      "why": "Bixby Bridge at 17:00 is close to golden hour but not built around it."
+     },
+     {
+      "pref": "prefers staying in walkable town centres",
+      "status": "partial",
+      "why": "SLO downtown is walkable, Big Sur Lodge is not."
+     },
+     {
+      "pref": "wants at least one seafood meal on the coast",
+      "status": "met",
+      "why": "Morro Bay harbour-front seafood on Day 2."
+     }
+    ]
+   },
+   {
+    "member_id": "mei",
+    "breakdown": [
+     {
+      "pref": "wants a relaxed pace, no more than 3 hours of driving in any single day",
+      "status": "unmet",
+      "why": "Day 1 is 5.5 hours of driving and Day 2 is 3.75 - both over her limit."
+     },
+     {
+      "pref": "prefers to be settled by 9:30pm, early nights",
+      "status": "partial",
+      "why": "Day 1 settles at 21:00, but Day 2 ends at 22:30."
+     },
+     {
+      "pref": "enjoys art museums and galleries",
+      "status": "unmet",
+      "why": "No gallery or art museum in the plan."
+     },
+     {
+      "pref": "wants unhurried sit-down meals rather than quick stops",
+      "status": "partial",
+      "why": "Big Sur dinner is 90 minutes, the rest are 60-minute stops."
+     }
+    ]
+   }
+  ]
+ },
+ "round2": {
+  "evaluations": [
+   {
+    "member_id": "priya",
+    "breakdown": [
+     {
+      "pref": "wants historical sites, museums and cultural landmarks",
+      "status": "met",
+      "why": "Monterey Bay Aquarium, 2 hours on Day 1."
+     },
+     {
+      "pref": "prefers to be settled at the hotel by 10pm",
+      "status": "met",
+      "why": "Both nights settle by 21:00."
+     },
+     {
+      "pref": "wants lodging under $150 per night",
+      "status": "partial",
+      "why": "$165 on Day 1 is over the ceiling, $135 on Day 2 is under."
+     },
+     {
+      "pref": "enjoys independent coffee shops and slow mornings",
+      "status": "met",
+      "why": "Independent roaster stop on Day 2 morning."
+     }
+    ]
+   },
+   {
+    "member_id": "sam",
+    "breakdown": [
+     {
+      "pref": "wants nightlife, breweries and live music in the evenings",
+      "status": "partial",
+      "why": "Taproom is there but moved to 18:30, ending at 20:30."
+     },
+     {
+      "pref": "wants to keep lodging under $120 per night, budget-conscious",
+      "status": "unmet",
+      "why": "$165 and $135 both exceed his stated $120 ceiling."
+     },
+     {
+      "pref": "prefers late starts, nothing before 10am",
+      "status": "met",
+      "why": "Earliest start is 09:30."
+     },
+     {
+      "pref": "likes trying local craft beer and casual food",
+      "status": "met",
+      "why": "Craft beer flight and a live acoustic set."
+     }
+    ]
+   },
+   {
+    "member_id": "ana",
+    "breakdown": [
+     {
+      "pref": "wants scenic coastal viewpoints and nature stops",
+      "status": "met",
+      "why": "Bixby Bridge overlook plus the Big Sur coastal stretch."
+     },
+     {
+      "pref": "wants good independent coffee in the morning",
+      "status": "met",
+      "why": "Independent roaster on Day 2, cafe wifi on Day 3."
+     },
+     {
+      "pref": "prefers a quiet place to work for an hour each afternoon",
+      "status": "met",
+      "why": "Dedicated 60-minute working block on Day 3."
+     },
+     {
+      "pref": "wants at least one beach walk",
+      "status": "unmet",
+      "why": "No beach walk is scheduled."
+     }
+    ]
+   },
+   {
+    "member_id": "diego",
+    "breakdown": [
+     {
+      "pref": "wants notable local food stops, not chains",
+      "status": "met",
+      "why": "Big Sur roadhouse and a local State Street kitchen."
+     },
+     {
+      "pref": "wants golden-hour photography locations",
+      "status": "partial",
+      "why": "Bixby at 12:15 is midday, not golden hour."
+     },
+     {
+      "pref": "prefers staying in walkable town centres",
+      "status": "partial",
+      "why": "SLO and Carmel are walkable, Monterey harbour less so."
+     },
+     {
+      "pref": "wants at least one seafood meal on the coast",
+      "status": "met",
+      "why": "Local seafood at the Big Sur roadhouse."
+     }
+    ]
+   },
+   {
+    "member_id": "mei",
+    "breakdown": [
+     {
+      "pref": "wants a relaxed pace, no more than 3 hours of driving in any single day",
+      "status": "met",
+      "why": "Longest driving day is now 2h45 - inside her three-hour limit."
+     },
+     {
+      "pref": "prefers to be settled by 9:30pm, early nights",
+      "status": "partial",
+      "why": "Day 1 settles 20:30, Day 2 at 21:00 - just past her 21:30 target."
+     },
+     {
+      "pref": "enjoys art museums and galleries",
+      "status": "met",
+      "why": "Monterey Bay Aquarium block on Day 1."
+     },
+     {
+      "pref": "wants unhurried sit-down meals rather than quick stops",
+      "status": "met",
+      "why": "90-minute sit-down dinner in Carmel and a 75-minute lunch."
+     }
+    ]
+   }
+  ]
+ },
+ "round3": {
+  "evaluations": [
+   {
+    "member_id": "priya",
+    "breakdown": [
+     {
+      "pref": "wants historical sites, museums and cultural landmarks",
+      "status": "partial",
+      "why": "Two art museums, but no historical landmark with a story attached."
+     },
+     {
+      "pref": "prefers to be settled at the hotel by 10pm",
+      "status": "met",
+      "why": "Both nights settle by 20:45."
+     },
+     {
+      "pref": "wants lodging under $150 per night",
+      "status": "met",
+      "why": "$148 and $132 both sit under the $150 ceiling."
+     },
+     {
+      "pref": "enjoys independent coffee shops and slow mornings",
+      "status": "met",
+      "why": "Ferry Building coffee Day 1 and an independent roaster Day 2."
+     }
+    ]
+   },
+   {
+    "member_id": "sam",
+    "breakdown": [
+     {
+      "pref": "wants nightlife, breweries and live music in the evenings",
+      "status": "met",
+      "why": "Taproom with a live acoustic set on Day 2."
+     },
+     {
+      "pref": "wants to keep lodging under $120 per night, budget-conscious",
+      "status": "unmet",
+      "why": "$148 and $132 are both above his stated $120 ceiling."
+     },
+     {
+      "pref": "prefers late starts, nothing before 10am",
+      "status": "partial",
+      "why": "Day 1 starts at 09:00, earlier than he asked for."
+     },
+     {
+      "pref": "likes trying local craft beer and casual food",
+      "status": "met",
+      "why": "Craft beer flight plus a local roadhouse lunch."
+     }
+    ]
+   },
+   {
+    "member_id": "ana",
+    "breakdown": [
+     {
+      "pref": "wants scenic coastal viewpoints and nature stops",
+      "status": "met",
+      "why": "Bixby Bridge overlook and the Big Sur coastal stretch."
+     },
+     {
+      "pref": "wants good independent coffee in the morning",
+      "status": "met",
+      "why": "Independent coffee on both mornings."
+     },
+     {
+      "pref": "prefers a quiet place to work for an hour each afternoon",
+      "status": "met",
+      "why": "Dedicated 60-minute working block on Day 3."
+     },
+     {
+      "pref": "wants at least one beach walk",
+      "status": "partial",
+      "why": "Step-free beach boardwalk at Bixby, but not a full beach walk."
+     }
+    ]
+   },
+   {
+    "member_id": "diego",
+    "breakdown": [
+     {
+      "pref": "wants notable local food stops, not chains",
+      "status": "met",
+      "why": "Half Moon Bay seafood shack, Big Sur roadhouse, local SLO kitchen."
+     },
+     {
+      "pref": "wants golden-hour photography locations",
+      "status": "partial",
+      "why": "No stop is built around golden hour, though Bixby is close."
+     },
+     {
+      "pref": "prefers staying in walkable town centres",
+      "status": "met",
+      "why": "Carmel, SLO and Santa Barbara centres are all walkable."
+     },
+     {
+      "pref": "wants at least one seafood meal on the coast",
+      "status": "met",
+      "why": "Half Moon Bay shack and the Big Sur crab lunch."
+     }
+    ]
+   },
+   {
+    "member_id": "mei",
+    "breakdown": [
+     {
+      "pref": "wants a relaxed pace, no more than 3 hours of driving in any single day",
+      "status": "met",
+      "why": "No driving day exceeds 2h45."
+     },
+     {
+      "pref": "prefers to be settled by 9:30pm, early nights",
+      "status": "met",
+      "why": "Both nights settle by 20:45."
+     },
+     {
+      "pref": "enjoys art museums and galleries",
+      "status": "met",
+      "why": "Monterey Museum of Art and Santa Barbara Museum of Art."
+     },
+     {
+      "pref": "wants unhurried sit-down meals rather than quick stops",
+      "status": "met",
+      "why": "100-minute Carmel dinner and an 80-minute State Street lunch."
+     }
+    ]
+   }
+  ]
+ },
+ "disrupted": {
+  "evaluations": [
+   {
+    "member_id": "priya",
+    "breakdown": [
+     {
+      "pref": "wants historical sites, museums and cultural landmarks",
+      "status": "partial",
+      "why": "Paso Robles gallery replaces the Monterey museum - still art, not history."
+     },
+     {
+      "pref": "prefers to be settled at the hotel by 10pm",
+      "status": "met",
+      "why": "Still settles by 20:45."
+     },
+     {
+      "pref": "wants lodging under $150 per night",
+      "status": "met",
+      "why": "Lodging unchanged at $132."
+     },
+     {
+      "pref": "enjoys independent coffee shops and slow mornings",
+      "status": "met",
+      "why": "Morning coffee stops are untouched."
+     }
+    ]
+   },
+   {
+    "member_id": "sam",
+    "breakdown": [
+     {
+      "pref": "wants nightlife, breweries and live music in the evenings",
+      "status": "met",
+      "why": "Taproom is indoors and unaffected by the storm."
+     },
+     {
+      "pref": "wants to keep lodging under $120 per night, budget-conscious",
+      "status": "unmet",
+      "why": "Lodging still above his $120 ceiling."
+     },
+     {
+      "pref": "prefers late starts, nothing before 10am",
+      "status": "partial",
+      "why": "Day 1 unchanged at 09:00."
+     },
+     {
+      "pref": "likes trying local craft beer and casual food",
+      "status": "met",
+      "why": "Craft beer flight unchanged."
+     }
+    ]
+   },
+   {
+    "member_id": "ana",
+    "breakdown": [
+     {
+      "pref": "wants scenic coastal viewpoints and nature stops",
+      "status": "unmet",
+      "why": "The Bixby Bridge overlook and the entire coastal stretch were dropped."
+     },
+     {
+      "pref": "wants good independent coffee in the morning",
+      "status": "met",
+      "why": "Morning coffee stop retained."
+     },
+     {
+      "pref": "prefers a quiet place to work for an hour each afternoon",
+      "status": "met",
+      "why": "Day 3 working block retained."
+     },
+     {
+      "pref": "wants at least one beach walk",
+      "status": "unmet",
+      "why": "The step-free beach boardwalk was part of the dropped coastal stop."
+     }
+    ]
+   },
+   {
+    "member_id": "diego",
+    "breakdown": [
+     {
+      "pref": "wants notable local food stops, not chains",
+      "status": "met",
+      "why": "Paso Robles local kitchen and the Half Moon Bay shack on Day 1."
+     },
+     {
+      "pref": "wants golden-hour photography locations",
+      "status": "unmet",
+      "why": "Every remaining outdoor stop was cut by the storm."
+     },
+     {
+      "pref": "prefers staying in walkable town centres",
+      "status": "met",
+      "why": "Paso Robles and SLO centres are walkable."
+     },
+     {
+      "pref": "wants at least one seafood meal on the coast",
+      "status": "partial",
+      "why": "Day 1 seafood stands, but the Big Sur crab lunch is gone."
+     }
+    ]
+   },
+   {
+    "member_id": "mei",
+    "breakdown": [
+     {
+      "pref": "wants a relaxed pace, no more than 3 hours of driving in any single day",
+      "status": "met",
+      "why": "Inland route is 20 minutes shorter - well under her limit."
+     },
+     {
+      "pref": "prefers to be settled by 9:30pm, early nights",
+      "status": "met",
+      "why": "Still settles by 20:45."
+     },
+     {
+      "pref": "enjoys art museums and galleries",
+      "status": "met",
+      "why": "Studios on the Park gallery replaces the museum."
+     },
+     {
+      "pref": "wants unhurried sit-down meals rather than quick stops",
+      "status": "met",
+      "why": "Sit-down lunch and dinner both retained."
+     }
+    ]
+   }
+  ]
+ }
+}

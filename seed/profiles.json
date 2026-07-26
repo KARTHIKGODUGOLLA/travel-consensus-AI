@@ -1,0 +1,85 @@
+[
+  {
+    "id": "priya",
+    "name": "Priya",
+    "avatar": "🧭",
+    "can_drive": false,
+    "hard": [
+      "vegetarian - every meal stop must have a substantial vegetarian option",
+      "cannot drive - has no license, must never be assigned as driver"
+    ],
+    "soft": [
+      { "pref": "wants historical sites, museums and cultural landmarks", "weight": 0.9 },
+      { "pref": "prefers to be settled at the hotel by 10pm", "weight": 0.6 },
+      { "pref": "wants lodging under $150 per night", "weight": 0.7 },
+      { "pref": "enjoys independent coffee shops and slow mornings", "weight": 0.4 }
+    ],
+    "learned": []
+  },
+  {
+    "id": "sam",
+    "name": "Sam",
+    "avatar": "🎸",
+    "can_drive": true,
+    "hard": [
+      "must be back in Los Angeles by 6pm Sunday for a flight"
+    ],
+    "soft": [
+      { "pref": "wants nightlife, breweries and live music in the evenings", "weight": 0.9 },
+      { "pref": "wants to keep lodging under $120 per night, budget-conscious", "weight": 0.8 },
+      { "pref": "prefers late starts, nothing before 10am", "weight": 0.5 },
+      { "pref": "likes trying local craft beer and casual food", "weight": 0.6 }
+    ],
+    "learned": []
+  },
+  {
+    "id": "ana",
+    "name": "Ana",
+    "avatar": "💻",
+    "can_drive": true,
+    "hard": [
+      "gluten-free - every meal stop must have a verified gluten-free option",
+      "has a client video call Tuesday 2:00pm-3:00pm and must be somewhere with reliable wifi, not in a moving car"
+    ],
+    "soft": [
+      { "pref": "wants scenic coastal viewpoints and nature stops", "weight": 0.8 },
+      { "pref": "wants good independent coffee in the morning", "weight": 0.6 },
+      { "pref": "prefers a quiet place to work for an hour each afternoon", "weight": 0.5 },
+      { "pref": "wants at least one beach walk", "weight": 0.4 }
+    ],
+    "learned": []
+  },
+  {
+    "id": "diego",
+    "name": "Diego",
+    "avatar": "📷",
+    "can_drive": true,
+    "hard": [
+      "cannot drive after sunset due to a medical night-vision condition - never assign driving after 7:30pm"
+    ],
+    "soft": [
+      { "pref": "wants notable local food stops, not chains", "weight": 0.9 },
+      { "pref": "wants golden-hour photography locations", "weight": 0.7 },
+      { "pref": "prefers staying in walkable town centres", "weight": 0.5 },
+      { "pref": "wants at least one seafood meal on the coast", "weight": 0.6 }
+    ],
+    "learned": []
+  },
+  {
+    "id": "mei",
+    "name": "Mei",
+    "avatar": "🎨",
+    "can_drive": false,
+    "hard": [
+      "uses a wheelchair - every stop and hotel must be step-free and wheelchair accessible",
+      "cannot drive"
+    ],
+    "soft": [
+      { "pref": "wants a relaxed pace, no more than 3 hours of driving in any single day", "weight": 0.8 },
+      { "pref": "prefers to be settled by 9:30pm, early nights", "weight": 0.7 },
+      { "pref": "enjoys art museums and galleries", "weight": 0.5 },
+      { "pref": "wants unhurried sit-down meals rather than quick stops", "weight": 0.6 }
+    ],
+    "learned": []
+  }
+]

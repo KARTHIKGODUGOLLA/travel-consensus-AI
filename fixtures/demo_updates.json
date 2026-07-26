@@ -1,0 +1,51 @@
+[
+ {
+  "member_id": "sam",
+  "pref": "wants to keep lodging under $120 per night, budget-conscious",
+  "old": 0.8,
+  "new": 0.3,
+  "evidence": "Rated the $210 Hoxton 9/10 and self-upgraded his room, then rated the $65 hostel 3/10 saying 'I'd rather pay more and actually sleep'. Stated budget preference is not what he acts on."
+ },
+ {
+  "member_id": "priya",
+  "pref": "wants historical sites, museums and cultural landmarks",
+  "old": 0.9,
+  "new": 0.4,
+  "evidence": "Left the Portland Art Museum after 20 minutes and skipped the Historical Society entirely. Rated the museum 4/10: 'I thought I wanted this but I was bored'. Only the Pittock Mansion, which had a view and a story, landed at 8/10."
+ },
+ {
+  "member_id": "priya",
+  "pref": "enjoys independent coffee shops and slow mornings",
+  "old": 0.4,
+  "new": 0.9,
+  "evidence": "Asked to add a coffee stop on two separate mornings, spent 70 minutes each time, rated it 10/10: 'Best part of the trip honestly. More of this.'"
+ },
+ {
+  "member_id": "diego",
+  "pref": "wants golden-hour photography locations",
+  "old": 0.7,
+  "new": 0.2,
+  "evidence": "Skipped both the Vista House overlook and the Council Crest sunset shoot. Said outright: 'I don't actually want to build the day around photography. Food is the thing.'"
+ },
+ {
+  "member_id": "diego",
+  "pref": "wants notable local food stops, not chains",
+  "old": 0.9,
+  "new": 1.0,
+  "evidence": "Visited the food cart pods three times, twice unplanned, and rated them 10/10 as 'the reason to come to Portland'."
+ },
+ {
+  "member_id": "mei",
+  "pref": "enjoys art museums and galleries",
+  "old": 0.5,
+  "new": 0.95,
+  "evidence": "Asked to extend the Portland Art Museum by an hour and was last out, rated it 10/10, then requested the Blue Sky Gallery herself on day two and rated it 9/10."
+ },
+ {
+  "member_id": "mei",
+  "pref": "wants a relaxed pace, no more than 3 hours of driving in any single day",
+  "old": 0.8,
+  "new": 1.0,
+  "evidence": "The 4.5-hour Day 2 driving block was rated 2/10: 'It wrecked the rest of my day. Three hours is genuinely my limit.'"
+ }
+]

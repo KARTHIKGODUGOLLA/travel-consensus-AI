@@ -1,0 +1,42 @@
+{
+  "trip_id": "trip1",
+  "title": "Portland long weekend",
+  "dates": "March 2026",
+  "members": ["priya", "sam", "ana", "diego", "mei"],
+  "final_group_score": 7.4,
+  "events": [
+    { "member": "priya", "item": "Portland Art Museum (2h)", "action": "skipped", "note": "left after 20 minutes, sat in the museum cafe for the rest of the slot" },
+    { "member": "priya", "item": "Oregon Historical Society (90m)", "action": "skipped", "note": "did not go in, walked to a coffee roaster two blocks away instead" },
+    { "member": "priya", "item": "Pittock Mansion tour (2h)", "action": "attended", "note": "stayed the full tour" },
+    { "member": "priya", "item": "Stumptown Coffee, morning", "action": "added", "note": "asked to add this stop on two separate mornings, spent 70 minutes each time" },
+    { "member": "sam", "item": "The Hoxton Portland - $210/night", "action": "attended", "note": "upgraded his own room on night two without being asked" },
+    { "member": "sam", "item": "HI Portland Hostel - $65/night", "action": "attended", "note": "complained about the shared bathroom and the noise" },
+    { "member": "sam", "item": "Cascade Brewing Barrel House", "action": "attended", "note": "stayed until closing" },
+    { "member": "ana", "item": "Multnomah Falls viewpoint", "action": "attended", "note": "full stop, took the upper trail" },
+    { "member": "ana", "item": "Client call slot, Thursday 2pm", "action": "attended", "note": "wifi at the cafe held up, no issues" },
+    { "member": "ana", "item": "Coava Coffee, morning", "action": "attended", "note": "went both mornings it was offered" },
+    { "member": "diego", "item": "Vista House scenic overlook (45m)", "action": "skipped", "note": "stayed in the car, said the light was flat" },
+    { "member": "diego", "item": "Council Crest sunset shoot (60m)", "action": "skipped", "note": "went to a food cart pod instead" },
+    { "member": "diego", "item": "Portland food cart pods", "action": "attended", "note": "went three separate times, twice unplanned" },
+    { "member": "mei", "item": "Portland Art Museum (2h)", "action": "attended", "note": "asked to extend by an hour, was the last one out" },
+    { "member": "mei", "item": "Blue Sky Gallery", "action": "added", "note": "requested this stop herself on day two" },
+    { "member": "mei", "item": "Day 2 driving block, 4.5 hours", "action": "attended", "note": "visibly exhausted by the end, went to bed immediately" }
+  ],
+  "ratings": [
+    { "member": "priya", "item": "Portland Art Museum (2h)", "score": 4, "note": "I thought I wanted this but I was bored. I'd rather have had the time free." },
+    { "member": "priya", "item": "Stumptown Coffee, morning", "score": 10, "note": "Best part of the trip honestly. More of this." },
+    { "member": "priya", "item": "Pittock Mansion tour (2h)", "score": 8, "note": "This one was worth it - it had a view and a story, not just rooms of objects." },
+    { "member": "sam", "item": "The Hoxton Portland - $210/night", "score": 9, "note": "Worth every dollar. Slept great, great location." },
+    { "member": "sam", "item": "HI Portland Hostel - $65/night", "score": 3, "note": "Never again. I'd rather pay more and actually sleep." },
+    { "member": "sam", "item": "Cascade Brewing Barrel House", "score": 9, "note": "Exactly what I came for." },
+    { "member": "ana", "item": "Multnomah Falls viewpoint", "score": 9, "note": "Gorgeous. Glad we made the detour." },
+    { "member": "ana", "item": "Coava Coffee, morning", "score": 8, "note": "Good coffee, good wifi, did an hour of work. Ideal." },
+    { "member": "ana", "item": "Client call slot, Thursday 2pm", "score": 9, "note": "Worked exactly as planned, thank you." },
+    { "member": "diego", "item": "Vista House scenic overlook (45m)", "score": 3, "note": "Overrated and crowded. Skip these next time." },
+    { "member": "diego", "item": "Portland food cart pods", "score": 10, "note": "This is the reason to come to Portland. Give me more food stops." },
+    { "member": "diego", "item": "Council Crest sunset shoot (60m)", "score": 4, "note": "I don't actually want to build the day around photography. Food is the thing." },
+    { "member": "mei", "item": "Portland Art Museum (2h)", "score": 10, "note": "I could have spent the whole day here. Please build more of this in." },
+    { "member": "mei", "item": "Blue Sky Gallery", "score": 9, "note": "Small and perfect. Worth adding." },
+    { "member": "mei", "item": "Day 2 driving block, 4.5 hours", "score": 2, "note": "Far too long. It wrecked the rest of my day. Three hours is genuinely my limit." }
+  ]
+}

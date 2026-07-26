@@ -1,0 +1,1539 @@
+{
+ "round1": {
+  "summary": "Coast-hugging three-day run with long driving days and evening brewery stops.",
+  "reasoning": "Prioritises covering the full Highway 1 route and Sam's evening plans. Driving days are long, which puts pressure on Mei's pace limit, and there are no cultural stops for Priya.",
+  "days": [
+   {
+    "date": "2026-08-11",
+    "label": "Day 1 - San Francisco to Big Sur",
+    "items": [
+     {
+      "id": "d1i1",
+      "time": "09:30",
+      "type": "drive",
+      "title": "Depart San Francisco, Highway 1 south",
+      "location": {
+       "name": "San Francisco, CA",
+       "lat": 37.7749,
+       "lng": -122.4194
+      },
+      "duration_min": 150,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives the first leg. Van is wheelchair accessible with a ramp.",
+      "serves_for": [
+       "sam"
+      ]
+     },
+     {
+      "id": "d1i2",
+      "time": "12:00",
+      "type": "meal",
+      "title": "Lunch at a Santa Cruz beach cafe",
+      "location": {
+       "name": "Santa Cruz, CA",
+       "lat": 36.9741,
+       "lng": -122.0308
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 22,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Casual, quick turnaround.",
+      "serves_for": [
+       "diego"
+      ]
+     },
+     {
+      "id": "d1i3",
+      "time": "13:30",
+      "type": "drive",
+      "title": "Continue to Monterey and Big Sur",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 180,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives, daylight only.",
+      "serves_for": []
+     },
+     {
+      "id": "d1i4",
+      "time": "17:00",
+      "type": "sight",
+      "title": "Bixby Creek Bridge viewpoint",
+      "location": {
+       "name": "Bixby Creek Bridge, Big Sur",
+       "lat": 36.3715,
+       "lng": -121.9016
+      },
+      "duration_min": 30,
+      "driver": "",
+      "cost_per_person": 0,
+      "notes": "Roadside stop. Step-free and wheelchair accessible (covers Mei). Paved pull-out.",
+      "serves_for": [
+       "ana",
+       "diego"
+      ]
+     },
+     {
+      "id": "d1i5",
+      "time": "19:00",
+      "type": "meal",
+      "title": "Dinner at a Big Sur roadhouse",
+      "location": {
+       "name": "Big Sur Village, CA",
+       "lat": 36.2704,
+       "lng": -121.8081
+      },
+      "duration_min": 90,
+      "driver": "",
+      "cost_per_person": 48,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Seafood on the menu.",
+      "serves_for": [
+       "diego",
+       "sam"
+      ]
+     },
+     {
+      "id": "d1i6",
+      "time": "21:00",
+      "type": "stay",
+      "title": "Big Sur Lodge - $185/night",
+      "location": {
+       "name": "Big Sur Village, CA",
+       "lat": 36.2704,
+       "lng": -121.8081
+      },
+      "duration_min": 0,
+      "driver": "",
+      "cost_per_person": 185,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Cabins with roll-in access.",
+      "serves_for": [
+       "sam"
+      ]
+     }
+    ]
+   },
+   {
+    "date": "2026-08-12",
+    "label": "Day 2 - Big Sur to San Luis Obispo",
+    "items": [
+     {
+      "id": "d2i1",
+      "time": "10:00",
+      "type": "drive",
+      "title": "Big Sur to San Simeon",
+      "location": {
+       "name": "San Simeon, CA",
+       "lat": 35.6852,
+       "lng": -121.1682
+      },
+      "duration_min": 165,
+      "driver": "sam",
+      "cost_per_person": 0,
+      "notes": "Sam drives.",
+      "serves_for": []
+     },
+     {
+      "id": "d2i2",
+      "time": "13:00",
+      "type": "meal",
+      "title": "Lunch in Morro Bay",
+      "location": {
+       "name": "Morro Bay, CA",
+       "lat": 35.3659,
+       "lng": -120.8499
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 26,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Harbour-front seafood.",
+      "serves_for": [
+       "diego"
+      ]
+     },
+     {
+      "id": "d2i3",
+      "time": "14:30",
+      "type": "drive",
+      "title": "On to San Luis Obispo",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 60,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives.",
+      "serves_for": []
+     },
+     {
+      "id": "d2i4",
+      "time": "16:00",
+      "type": "free",
+      "title": "Free time downtown",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 90,
+      "driver": "",
+      "cost_per_person": 0,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Flat downtown grid.",
+      "serves_for": [
+       "priya"
+      ]
+     },
+     {
+      "id": "d2i5",
+      "time": "19:30",
+      "type": "meal",
+      "title": "Dinner and taproom, SLO brewery district",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 150,
+      "driver": "",
+      "cost_per_person": 42,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Craft beer, live music from 9pm.",
+      "serves_for": [
+       "sam"
+      ]
+     },
+     {
+      "id": "d2i6",
+      "time": "22:30",
+      "type": "stay",
+      "title": "SLO budget motel - $110/night",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 0,
+      "driver": "",
+      "cost_per_person": 110,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Ground floor rooms.",
+      "serves_for": [
+       "sam"
+      ]
+     }
+    ]
+   },
+   {
+    "date": "2026-08-13",
+    "label": "Day 3 - San Luis Obispo to Los Angeles",
+    "items": [
+     {
+      "id": "d3i1",
+      "time": "10:30",
+      "type": "drive",
+      "title": "SLO to Santa Barbara",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 135,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives.",
+      "serves_for": []
+     },
+     {
+      "id": "d3i2",
+      "time": "13:00",
+      "type": "meal",
+      "title": "Lunch on State Street",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 28,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei).",
+      "serves_for": [
+       "diego"
+      ]
+     },
+     {
+      "id": "d3i3",
+      "time": "14:30",
+      "type": "drive",
+      "title": "Santa Barbara to LAX",
+      "location": {
+       "name": "Los Angeles, CA",
+       "lat": 34.0522,
+       "lng": -118.2437
+      },
+      "duration_min": 150,
+      "driver": "sam",
+      "cost_per_person": 0,
+      "notes": "Sam drives. Arrives 17:00, ahead of the 18:00 flight.",
+      "serves_for": [
+       "sam"
+      ]
+     }
+    ]
+   }
+  ],
+  "tradeoffs": [
+   {
+    "description": "Chose a late brewery night in SLO over an early finish.",
+    "favored": [
+     "sam"
+    ],
+    "disfavored": [
+     "mei",
+     "priya"
+    ]
+   },
+   {
+    "description": "Chose route coverage over short driving days.",
+    "favored": [
+     "sam",
+     "ana"
+    ],
+    "disfavored": [
+     "mei"
+    ]
+   },
+   {
+    "description": "No museum or gallery stops were included.",
+    "favored": [
+     "sam"
+    ],
+    "disfavored": [
+     "priya",
+     "mei"
+    ]
+   }
+  ]
+ },
+ "round2": {
+  "summary": "Shorter driving days, a Monterey aquarium block, and the brewery night moved earlier.",
+  "reasoning": "Day 2 driving is cut to under three hours to respect Mei's limit. A cultural stop is added for Priya and Mei. Sam keeps his taproom evening but it starts at 18:30 so the group is settled by 22:00.",
+  "days": [
+   {
+    "date": "2026-08-11",
+    "label": "Day 1 - San Francisco to Monterey",
+    "items": [
+     {
+      "id": "d1i1",
+      "time": "09:30",
+      "type": "drive",
+      "title": "Depart San Francisco via Half Moon Bay",
+      "location": {
+       "name": "San Francisco, CA",
+       "lat": 37.7749,
+       "lng": -122.4194
+      },
+      "duration_min": 110,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives. Accessible van with ramp.",
+      "serves_for": [
+       "ana"
+      ]
+     },
+     {
+      "id": "d1i2",
+      "time": "11:30",
+      "type": "meal",
+      "title": "Brunch in Half Moon Bay",
+      "location": {
+       "name": "Half Moon Bay, CA",
+       "lat": 37.4636,
+       "lng": -122.4286
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 24,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Independent roaster next door.",
+      "serves_for": [
+       "priya",
+       "ana",
+       "diego"
+      ]
+     },
+     {
+      "id": "d1i3",
+      "time": "13:00",
+      "type": "drive",
+      "title": "Half Moon Bay to Monterey",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 105,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives, daylight.",
+      "serves_for": []
+     },
+     {
+      "id": "d1i4",
+      "time": "15:00",
+      "type": "sight",
+      "title": "Monterey Bay Aquarium",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 120,
+      "driver": "",
+      "cost_per_person": 50,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Fully step-free, lifts to all levels.",
+      "serves_for": [
+       "mei",
+       "priya",
+       "ana"
+      ]
+     },
+     {
+      "id": "d1i5",
+      "time": "18:00",
+      "type": "meal",
+      "title": "Early dinner in Carmel-by-the-Sea",
+      "location": {
+       "name": "Carmel-by-the-Sea, CA",
+       "lat": 36.5552,
+       "lng": -121.9233
+      },
+      "duration_min": 90,
+      "driver": "",
+      "cost_per_person": 46,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Sit-down, unhurried.",
+      "serves_for": [
+       "mei",
+       "diego"
+      ]
+     },
+     {
+      "id": "d1i6",
+      "time": "20:30",
+      "type": "stay",
+      "title": "Monterey harbour hotel - $165/night",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 0,
+      "driver": "",
+      "cost_per_person": 165,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Roll-in shower available.",
+      "serves_for": [
+       "priya"
+      ]
+     }
+    ]
+   },
+   {
+    "date": "2026-08-12",
+    "label": "Day 2 - Monterey to San Luis Obispo",
+    "items": [
+     {
+      "id": "d2i1",
+      "time": "09:30",
+      "type": "meal",
+      "title": "Morning coffee, independent roaster",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 45,
+      "driver": "",
+      "cost_per_person": 9,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Strong wifi.",
+      "serves_for": [
+       "priya",
+       "ana"
+      ]
+     },
+     {
+      "id": "d2i2",
+      "time": "10:30",
+      "type": "drive",
+      "title": "Monterey to Bixby Bridge and Big Sur",
+      "location": {
+       "name": "Bixby Creek Bridge, Big Sur",
+       "lat": 36.3715,
+       "lng": -121.9016
+      },
+      "duration_min": 75,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives.",
+      "serves_for": []
+     },
+     {
+      "id": "d2i3",
+      "time": "12:15",
+      "type": "sight",
+      "title": "Bixby Creek Bridge and coastal overlook",
+      "location": {
+       "name": "Bixby Creek Bridge, Big Sur",
+       "lat": 36.3715,
+       "lng": -121.9016
+      },
+      "duration_min": 40,
+      "driver": "",
+      "cost_per_person": 0,
+      "notes": "Paved viewing area. Step-free and wheelchair accessible (covers Mei).",
+      "serves_for": [
+       "ana",
+       "diego"
+      ]
+     },
+     {
+      "id": "d2i4",
+      "time": "13:30",
+      "type": "meal",
+      "title": "Lunch at a Big Sur roadhouse",
+      "location": {
+       "name": "Big Sur Village, CA",
+       "lat": 36.2704,
+       "lng": -121.8081
+      },
+      "duration_min": 75,
+      "driver": "",
+      "cost_per_person": 38,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Local seafood.",
+      "serves_for": [
+       "diego"
+      ]
+     },
+     {
+      "id": "d2i5",
+      "time": "15:15",
+      "type": "drive",
+      "title": "Big Sur to San Luis Obispo",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 165,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives, arrives before dusk.",
+      "serves_for": []
+     },
+     {
+      "id": "d2i6",
+      "time": "18:30",
+      "type": "meal",
+      "title": "Dinner and taproom, SLO",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 120,
+      "driver": "",
+      "cost_per_person": 40,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Craft beer flight, live acoustic set at 19:30.",
+      "serves_for": [
+       "sam",
+       "diego"
+      ]
+     },
+     {
+      "id": "d2i7",
+      "time": "21:00",
+      "type": "stay",
+      "title": "SLO downtown inn - $135/night",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 0,
+      "driver": "",
+      "cost_per_person": 135,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Ground floor, step-free entry.",
+      "serves_for": [
+       "priya",
+       "sam"
+      ]
+     }
+    ]
+   },
+   {
+    "date": "2026-08-13",
+    "label": "Day 3 - San Luis Obispo to Los Angeles",
+    "items": [
+     {
+      "id": "d3i1",
+      "time": "09:30",
+      "type": "work",
+      "title": "Working hour, cafe with wifi",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 8,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Quiet back room, reliable wifi.",
+      "serves_for": [
+       "ana"
+      ]
+     },
+     {
+      "id": "d3i2",
+      "time": "11:00",
+      "type": "drive",
+      "title": "SLO to Santa Barbara",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 135,
+      "driver": "sam",
+      "cost_per_person": 0,
+      "notes": "Sam drives.",
+      "serves_for": []
+     },
+     {
+      "id": "d3i3",
+      "time": "13:30",
+      "type": "meal",
+      "title": "Lunch on State Street",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 75,
+      "driver": "",
+      "cost_per_person": 30,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Sit-down.",
+      "serves_for": [
+       "mei",
+       "diego"
+      ]
+     },
+     {
+      "id": "d3i4",
+      "time": "15:00",
+      "type": "drive",
+      "title": "Santa Barbara to LAX",
+      "location": {
+       "name": "Los Angeles, CA",
+       "lat": 34.0522,
+       "lng": -118.2437
+      },
+      "duration_min": 150,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives. Arrives 17:30, comfortably before the 18:00 deadline.",
+      "serves_for": [
+       "sam"
+      ]
+     }
+    ]
+   }
+  ],
+  "tradeoffs": [
+   {
+    "description": "Shortened Day 2 driving to respect Mei's three-hour limit, which cut one Big Sur stop.",
+    "favored": [
+     "mei"
+    ],
+    "disfavored": [
+     "ana"
+    ]
+   },
+   {
+    "description": "Moved the taproom to 18:30 so the group is settled by 21:00.",
+    "favored": [
+     "mei",
+     "priya"
+    ],
+    "disfavored": [
+     "sam"
+    ]
+   },
+   {
+    "description": "Added the aquarium instead of a second scenic overlook.",
+    "favored": [
+     "mei",
+     "priya"
+    ],
+    "disfavored": [
+     "diego"
+    ]
+   }
+  ]
+ },
+ "round3": {
+  "summary": "Balanced three days: a gallery block for Mei, slow coffee mornings for Priya, food-led stops for Diego, and Sam's taproom kept intact.",
+  "reasoning": "Every member now has at least two items scored for them directly. Mei's driving stays under three hours every day and she gets two gallery blocks. Priya trades museum time for the slow-morning coffee she actually used on the last trip. Sam keeps his evening but at a time that lets the group settle by 21:30.",
+  "days": [
+   {
+    "date": "2026-08-11",
+    "label": "Day 1 - San Francisco to Monterey",
+    "items": [
+     {
+      "id": "d1i1",
+      "time": "09:00",
+      "type": "meal",
+      "title": "Slow start, Ferry Building coffee",
+      "location": {
+       "name": "San Francisco, CA",
+       "lat": 37.7749,
+       "lng": -122.4194
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 11,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Independent roaster, unhurried.",
+      "serves_for": [
+       "priya",
+       "ana"
+      ]
+     },
+     {
+      "id": "d1i2",
+      "time": "10:15",
+      "type": "drive",
+      "title": "Depart San Francisco via Half Moon Bay",
+      "location": {
+       "name": "San Francisco, CA",
+       "lat": 37.7749,
+       "lng": -122.4194
+      },
+      "duration_min": 110,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives. Accessible van with ramp.",
+      "serves_for": []
+     },
+     {
+      "id": "d1i3",
+      "time": "12:15",
+      "type": "meal",
+      "title": "Lunch in Half Moon Bay",
+      "location": {
+       "name": "Half Moon Bay, CA",
+       "lat": 37.4636,
+       "lng": -122.4286
+      },
+      "duration_min": 70,
+      "driver": "",
+      "cost_per_person": 26,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Coastal seafood shack, local not chain.",
+      "serves_for": [
+       "diego",
+       "priya"
+      ]
+     },
+     {
+      "id": "d1i4",
+      "time": "13:45",
+      "type": "drive",
+      "title": "Half Moon Bay to Monterey",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 105,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives, daylight.",
+      "serves_for": []
+     },
+     {
+      "id": "d1i5",
+      "time": "15:45",
+      "type": "sight",
+      "title": "Monterey Museum of Art",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 90,
+      "driver": "",
+      "cost_per_person": 15,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Lift access to all floors.",
+      "serves_for": [
+       "mei",
+       "priya"
+      ]
+     },
+     {
+      "id": "d1i6",
+      "time": "18:00",
+      "type": "meal",
+      "title": "Unhurried dinner in Carmel-by-the-Sea",
+      "location": {
+       "name": "Carmel-by-the-Sea, CA",
+       "lat": 36.5552,
+       "lng": -121.9233
+      },
+      "duration_min": 100,
+      "driver": "",
+      "cost_per_person": 46,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Sit-down, three courses, no rush.",
+      "serves_for": [
+       "mei",
+       "diego"
+      ]
+     },
+     {
+      "id": "d1i7",
+      "time": "20:30",
+      "type": "stay",
+      "title": "Monterey harbour hotel - $148/night",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 0,
+      "driver": "",
+      "cost_per_person": 148,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Roll-in shower.",
+      "serves_for": [
+       "priya",
+       "sam"
+      ]
+     }
+    ]
+   },
+   {
+    "date": "2026-08-12",
+    "label": "Day 2 - Monterey to San Luis Obispo",
+    "items": [
+     {
+      "id": "d2i1",
+      "time": "09:15",
+      "type": "meal",
+      "title": "Morning coffee, independent roaster",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 50,
+      "driver": "",
+      "cost_per_person": 9,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Strong wifi, quiet corner.",
+      "serves_for": [
+       "priya",
+       "ana"
+      ]
+     },
+     {
+      "id": "d2i2",
+      "time": "10:30",
+      "type": "drive",
+      "title": "Monterey to Bixby Bridge",
+      "location": {
+       "name": "Bixby Creek Bridge, Big Sur",
+       "lat": 36.3715,
+       "lng": -121.9016
+      },
+      "duration_min": 75,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives.",
+      "serves_for": []
+     },
+     {
+      "id": "d2i3",
+      "time": "12:00",
+      "type": "sight",
+      "title": "Bixby Creek Bridge, coastal overlook and beach path",
+      "location": {
+       "name": "Bixby Creek Bridge, Big Sur",
+       "lat": 36.3715,
+       "lng": -121.9016
+      },
+      "duration_min": 50,
+      "driver": "",
+      "cost_per_person": 0,
+      "notes": "Paved viewing area and a step-free beach boardwalk. Step-free and wheelchair accessible (covers Mei).",
+      "serves_for": [
+       "ana",
+       "diego"
+      ]
+     },
+     {
+      "id": "d2i4",
+      "time": "13:15",
+      "type": "meal",
+      "title": "Lunch at a Big Sur roadhouse",
+      "location": {
+       "name": "Big Sur Village, CA",
+       "lat": 36.2704,
+       "lng": -121.8081
+      },
+      "duration_min": 75,
+      "driver": "",
+      "cost_per_person": 38,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Local seafood, known for its crab.",
+      "serves_for": [
+       "diego"
+      ]
+     },
+     {
+      "id": "d2i5",
+      "time": "15:00",
+      "type": "drive",
+      "title": "Big Sur to San Luis Obispo",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 165,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives, arrives well before dusk.",
+      "serves_for": []
+     },
+     {
+      "id": "d2i6",
+      "time": "18:15",
+      "type": "meal",
+      "title": "Dinner and taproom, SLO brewery district",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 120,
+      "driver": "",
+      "cost_per_person": 40,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Craft beer flight, live acoustic set at 19:00.",
+      "serves_for": [
+       "sam",
+       "diego"
+      ]
+     },
+     {
+      "id": "d2i7",
+      "time": "20:45",
+      "type": "stay",
+      "title": "SLO downtown inn - $132/night",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 0,
+      "driver": "",
+      "cost_per_person": 132,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Ground floor, step-free entry, walkable centre.",
+      "serves_for": [
+       "priya",
+       "sam",
+       "diego"
+      ]
+     }
+    ]
+   },
+   {
+    "date": "2026-08-13",
+    "label": "Day 3 - San Luis Obispo to Los Angeles",
+    "items": [
+     {
+      "id": "d3i1",
+      "time": "09:15",
+      "type": "work",
+      "title": "Working hour, cafe with reliable wifi",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 8,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Quiet back room.",
+      "serves_for": [
+       "ana"
+      ]
+     },
+     {
+      "id": "d3i2",
+      "time": "10:45",
+      "type": "drive",
+      "title": "SLO to Santa Barbara",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 135,
+      "driver": "sam",
+      "cost_per_person": 0,
+      "notes": "Sam drives.",
+      "serves_for": []
+     },
+     {
+      "id": "d3i3",
+      "time": "13:15",
+      "type": "meal",
+      "title": "Unhurried lunch on State Street",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 80,
+      "driver": "",
+      "cost_per_person": 30,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Sit-down, local kitchen.",
+      "serves_for": [
+       "mei",
+       "diego",
+       "priya"
+      ]
+     },
+     {
+      "id": "d3i4",
+      "time": "14:45",
+      "type": "sight",
+      "title": "Santa Barbara Museum of Art",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 0,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Free entry, lift to upper gallery.",
+      "serves_for": [
+       "mei",
+       "priya"
+      ]
+     },
+     {
+      "id": "d3i5",
+      "time": "16:00",
+      "type": "drive",
+      "title": "Santa Barbara to LAX",
+      "location": {
+       "name": "Los Angeles, CA",
+       "lat": 34.0522,
+       "lng": -118.2437
+      },
+      "duration_min": 150,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives. Arrives 18:30 - flight is 20:00, Sam has margin.",
+      "serves_for": [
+       "sam"
+      ]
+     }
+    ]
+   }
+  ],
+  "tradeoffs": [
+   {
+    "description": "Swapped one Big Sur overlook for the Monterey art museum.",
+    "favored": [
+     "mei",
+     "priya"
+    ],
+    "disfavored": [
+     "ana"
+    ]
+   },
+   {
+    "description": "Kept the taproom but at 18:15 so the group settles by 21:00.",
+    "favored": [
+     "mei",
+     "priya"
+    ],
+    "disfavored": [
+     "sam"
+    ]
+   },
+   {
+    "description": "Lodging at $148 and $132 sits above Sam's stated $120 ceiling.",
+    "favored": [
+     "priya",
+     "mei"
+    ],
+    "disfavored": [
+     "sam"
+    ]
+   }
+  ]
+ },
+ "disrupted": {
+  "summary": "Storm reroute: Big Sur coastal stops dropped, inland route to SLO, gallery time added to compensate.",
+  "reasoning": "A coastal storm warning makes the Bixby Bridge overlook unsafe and Highway 1 south of Big Sur is at risk of closure. Day 1 is untouched. Day 2 reroutes inland via US-101, which is 20 minutes shorter, and the freed time goes to an indoor gallery in Paso Robles. Day 3 is unchanged.",
+  "days": [
+   {
+    "date": "2026-08-11",
+    "label": "Day 1 - San Francisco to Monterey",
+    "items": [
+     {
+      "id": "d1i1",
+      "time": "09:00",
+      "type": "meal",
+      "title": "Slow start, Ferry Building coffee",
+      "location": {
+       "name": "San Francisco, CA",
+       "lat": 37.7749,
+       "lng": -122.4194
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 11,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Independent roaster, unhurried.",
+      "serves_for": [
+       "priya",
+       "ana"
+      ]
+     },
+     {
+      "id": "d1i2",
+      "time": "10:15",
+      "type": "drive",
+      "title": "Depart San Francisco via Half Moon Bay",
+      "location": {
+       "name": "San Francisco, CA",
+       "lat": 37.7749,
+       "lng": -122.4194
+      },
+      "duration_min": 110,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives. Accessible van with ramp.",
+      "serves_for": []
+     },
+     {
+      "id": "d1i3",
+      "time": "12:15",
+      "type": "meal",
+      "title": "Lunch in Half Moon Bay",
+      "location": {
+       "name": "Half Moon Bay, CA",
+       "lat": 37.4636,
+       "lng": -122.4286
+      },
+      "duration_min": 70,
+      "driver": "",
+      "cost_per_person": 26,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Coastal seafood shack, local not chain.",
+      "serves_for": [
+       "diego",
+       "priya"
+      ]
+     },
+     {
+      "id": "d1i4",
+      "time": "13:45",
+      "type": "drive",
+      "title": "Half Moon Bay to Monterey",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 105,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives, daylight.",
+      "serves_for": []
+     },
+     {
+      "id": "d1i5",
+      "time": "15:45",
+      "type": "sight",
+      "title": "Monterey Museum of Art",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 90,
+      "driver": "",
+      "cost_per_person": 15,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Lift access to all floors.",
+      "serves_for": [
+       "mei",
+       "priya"
+      ]
+     },
+     {
+      "id": "d1i6",
+      "time": "18:00",
+      "type": "meal",
+      "title": "Unhurried dinner in Carmel-by-the-Sea",
+      "location": {
+       "name": "Carmel-by-the-Sea, CA",
+       "lat": 36.5552,
+       "lng": -121.9233
+      },
+      "duration_min": 100,
+      "driver": "",
+      "cost_per_person": 46,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Sit-down, three courses, no rush.",
+      "serves_for": [
+       "mei",
+       "diego"
+      ]
+     },
+     {
+      "id": "d1i7",
+      "time": "20:30",
+      "type": "stay",
+      "title": "Monterey harbour hotel - $148/night",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 0,
+      "driver": "",
+      "cost_per_person": 148,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Roll-in shower.",
+      "serves_for": [
+       "priya",
+       "sam"
+      ]
+     }
+    ]
+   },
+   {
+    "date": "2026-08-12",
+    "label": "Day 2 - Monterey to San Luis Obispo (inland reroute)",
+    "items": [
+     {
+      "id": "d2i1",
+      "time": "09:15",
+      "type": "meal",
+      "title": "Morning coffee, independent roaster",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 50,
+      "driver": "",
+      "cost_per_person": 9,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Strong wifi, quiet corner.",
+      "serves_for": [
+       "priya",
+       "ana"
+      ]
+     },
+     {
+      "id": "d2i2",
+      "time": "10:30",
+      "type": "drive",
+      "title": "Monterey inland via US-101, avoiding the coast",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 95,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives. Storm warning on Highway 1 south of Bixby - coastal route dropped.",
+      "serves_for": []
+     },
+     {
+      "id": "d2i3",
+      "time": "12:30",
+      "type": "meal",
+      "title": "Lunch in Paso Robles",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 75,
+      "driver": "",
+      "cost_per_person": 32,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Indoor, local kitchen.",
+      "serves_for": [
+       "diego",
+       "mei"
+      ]
+     },
+     {
+      "id": "d2i4",
+      "time": "14:00",
+      "type": "sight",
+      "title": "Studios on the Park gallery, Paso Robles",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 75,
+      "driver": "",
+      "cost_per_person": 0,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Indoor, step-free, working artist studios.",
+      "serves_for": [
+       "mei",
+       "priya"
+      ]
+     },
+     {
+      "id": "d2i5",
+      "time": "15:45",
+      "type": "drive",
+      "title": "Paso Robles to San Luis Obispo",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 45,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives, daylight.",
+      "serves_for": []
+     },
+     {
+      "id": "d2i6",
+      "time": "18:15",
+      "type": "meal",
+      "title": "Dinner and taproom, SLO brewery district",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 120,
+      "driver": "",
+      "cost_per_person": 40,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Indoor. Craft beer flight, live acoustic set at 19:00.",
+      "serves_for": [
+       "sam",
+       "diego"
+      ]
+     },
+     {
+      "id": "d2i7",
+      "time": "20:45",
+      "type": "stay",
+      "title": "SLO downtown inn - $132/night",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 0,
+      "driver": "",
+      "cost_per_person": 132,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Ground floor, step-free entry.",
+      "serves_for": [
+       "priya",
+       "sam",
+       "diego"
+      ]
+     }
+    ]
+   },
+   {
+    "date": "2026-08-13",
+    "label": "Day 3 - San Luis Obispo to Los Angeles",
+    "items": [
+     {
+      "id": "d3i1",
+      "time": "09:15",
+      "type": "work",
+      "title": "Working hour, cafe with reliable wifi",
+      "location": {
+       "name": "San Luis Obispo, CA",
+       "lat": 35.2828,
+       "lng": -120.6596
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 8,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Quiet back room.",
+      "serves_for": [
+       "ana"
+      ]
+     },
+     {
+      "id": "d3i2",
+      "time": "10:45",
+      "type": "drive",
+      "title": "SLO to Santa Barbara",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 135,
+      "driver": "sam",
+      "cost_per_person": 0,
+      "notes": "Sam drives.",
+      "serves_for": []
+     },
+     {
+      "id": "d3i3",
+      "time": "13:15",
+      "type": "meal",
+      "title": "Unhurried lunch on State Street",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 80,
+      "driver": "",
+      "cost_per_person": 30,
+      "notes": "Full vegetarian menu (covers Priya). Verified gluten-free menu (covers Ana). Step-free and wheelchair accessible (covers Mei). Sit-down, local kitchen.",
+      "serves_for": [
+       "mei",
+       "diego",
+       "priya"
+      ]
+     },
+     {
+      "id": "d3i4",
+      "time": "14:45",
+      "type": "sight",
+      "title": "Santa Barbara Museum of Art",
+      "location": {
+       "name": "Santa Barbara, CA",
+       "lat": 34.4208,
+       "lng": -119.6982
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 0,
+      "notes": "Step-free and wheelchair accessible (covers Mei). Free entry, lift to upper gallery.",
+      "serves_for": [
+       "mei",
+       "priya"
+      ]
+     },
+     {
+      "id": "d3i5",
+      "time": "16:00",
+      "type": "drive",
+      "title": "Santa Barbara to LAX",
+      "location": {
+       "name": "Los Angeles, CA",
+       "lat": 34.0522,
+       "lng": -118.2437
+      },
+      "duration_min": 150,
+      "driver": "ana",
+      "cost_per_person": 0,
+      "notes": "Ana drives. Arrives 18:30 - flight is 20:00, Sam has margin.",
+      "serves_for": [
+       "sam"
+      ]
+     }
+    ]
+   }
+  ],
+  "tradeoffs": [
+   {
+    "description": "Storm forced the Bixby Bridge coastal stop to be dropped entirely.",
+    "favored": [
+     "mei"
+    ],
+    "disfavored": [
+     "ana",
+     "diego"
+    ]
+   },
+   {
+    "description": "Freed time went to an indoor gallery rather than a second food stop.",
+    "favored": [
+     "mei",
+     "priya"
+    ],
+    "disfavored": [
+     "diego"
+    ]
+   }
+  ]
+ },
+ "broken": {
+  "summary": "deliberately invalid plan, used by tests",
+  "reasoning": "",
+  "days": [
+   {
+    "date": "2026-08-11",
+    "label": "Day 1",
+    "items": [
+     {
+      "id": "x1",
+      "time": "09:00",
+      "type": "drive",
+      "title": "Depart San Francisco",
+      "location": {
+       "name": "San Francisco, CA",
+       "lat": 37.7749,
+       "lng": -122.4194
+      },
+      "duration_min": 120,
+      "driver": "priya",
+      "cost_per_person": 0,
+      "notes": "Priya drives the first leg.",
+      "serves_for": []
+     },
+     {
+      "id": "x2",
+      "time": "12:00",
+      "type": "meal",
+      "title": "Lunch at a burger place",
+      "location": {
+       "name": "Santa Cruz, CA",
+       "lat": 36.9741,
+       "lng": -122.0308
+      },
+      "duration_min": 60,
+      "driver": "",
+      "cost_per_person": 0,
+      "notes": "Great burgers.",
+      "serves_for": []
+     },
+     {
+      "id": "x3",
+      "time": "20:00",
+      "type": "drive",
+      "title": "Night leg to Monterey",
+      "location": {
+       "name": "Monterey, CA",
+       "lat": 36.6002,
+       "lng": -121.8947
+      },
+      "duration_min": 90,
+      "driver": "diego",
+      "cost_per_person": 0,
+      "notes": "Diego drives after dark.",
+      "serves_for": []
+     }
+    ]
+   }
+  ],
+  "tradeoffs": []
+ }
+}
