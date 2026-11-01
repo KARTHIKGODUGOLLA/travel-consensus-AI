@@ -82,7 +82,7 @@ def load_trip1_history() -> dict:
 
 
 # --------------------------------------------------------------------------
-# JSON schemas for tool-use (guarantees well-formed output)
+# Requested tool-output schemas; application validation remains necessary.
 # --------------------------------------------------------------------------
 
 _LOCATION = {
@@ -242,6 +242,8 @@ def api_key_present() -> bool:
 
 
 def _client():
+    if DEMO_MODE:
+        raise AgentError("Hosted API access is disabled in DEMO_MODE.")
     from anthropic import Anthropic
 
     key = os.getenv("ANTHROPIC_API_KEY")
@@ -253,7 +255,9 @@ def _client():
 
 
 def _tool_call(prompt: str, tool_name: str, schema: dict, max_tokens: int = 8000) -> dict:
-    """Force the model through a JSON schema. Returns the tool input dict."""
+    """Request structured tool output. Returns the tool input dict."""
+    if DEMO_MODE:
+        raise AgentError("Hosted API access is disabled in DEMO_MODE.")
     resp = _client().messages.create(
         model=MODEL,
         max_tokens=max_tokens,
@@ -864,6 +868,8 @@ def convergence(round_no: int, group: float, prev_group: float | None) -> tuple[
 # --------------------------------------------------------------------------
 
 def static_map_url(plan: dict, size: str = "640x420") -> str | None:
+    if DEMO_MODE:
+        return None
     pts = [
         (i["location"]["lat"], i["location"]["lng"])
         for _, i in iter_items(plan)
@@ -896,6 +902,8 @@ _FACT_CACHE: dict[tuple, str] = {}
 
 def fun_fact(lat: float, lng: float) -> str | None:
     """Nearest Wikipedia article to a coordinate, first sentence. Keyless."""
+    if DEMO_MODE:
+        return None
     key = (round(lat, 3), round(lng, 3))
     if key in _FACT_CACHE:
         return _FACT_CACHE[key]
@@ -940,6 +948,8 @@ WEATHER_CODES = {
 
 
 def _fetch_weather(lat: float, lng: float, date: str) -> dict | None:
+    if DEMO_MODE:
+        return None
     try:
         r = requests.get(
             "https://api.open-meteo.com/v1/forecast",
@@ -973,6 +983,8 @@ def weather_for(lat: float, lng: float, date: str) -> dict | None:
     we clamp to the furthest available day and flag the result as approximate,
     rather than returning nothing.
     """
+    if DEMO_MODE:
+        return None
     import datetime as _dt
 
     got = _fetch_weather(lat, lng, date)
