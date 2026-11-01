@@ -1,123 +1,92 @@
-# travel-consensus-AI-Agent
+# Travel Consensus AI
 
-An agent that plans a group trip around everyone's constraints at once, shows
-who is compromising and by how much, replans in one shot when reality
-interferes, and gets measurably better at each traveller after every trip.
+A Python and Streamlit prototype for planning a group trip around competing
+preferences. It shows itinerary tradeoffs, collects feedback, previews a
+disruption replan, and demonstrates preference-weight updates after a trip.
+It is intended for developers exploring collaborative travel-planning workflows.
 
-## Quickstart
+## Run the offline demo
 
-```bash
-git clone https://github.com/KARTHIKGODUGOLLA/travel-consensus-AI.git
-cd travel-consensus-AI
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-
-cp .env.example .env        # add your ANTHROPIC_API_KEY
-streamlit run app.py
-```
-
-Offline, no API calls, no key needed:
+Python 3.11 or later. From the repository root:
 
 ```bash
-DEMO_MODE=1 streamlit run app.py
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+DEMO_MODE=1 python -m streamlit run app.py --server.address 127.0.0.1
 ```
 
-`DEMO_MODE` serves hand-built fixtures instantly. Use it to rehearse, and as
-the safety net if the venue wifi dies.
+On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1`, set
+`$env:DEMO_MODE = "1"`, then run `python -m streamlit run app.py`.
 
-## What it does
+Click **Generate plan**. The offline demo serves authored itinerary fixtures.
+It does not adapt those fixtures to arbitrary new destinations or dates.
+External AI, weather, facts, and maps are disabled in this mode, including when
+API credentials are already present in the environment. Usage reporting is
+disabled in the included Streamlit configuration.
 
-1. **Profiles already exist.** Each person has *hard* constraints (vegetarian,
-   cannot drive, wheelchair access) and *soft* preferences with weights 0–1.
-2. **Plan.** One LLM call produces a full itinerary plus an honest list of the
-   tradeoffs it made and who lost each one.
-3. **Validate.** A pure-Python checker rejects any plan that breaks a hard
-   constraint and sends it back with the specific violations. Max 2 retries.
-4. **Score.** A second LLM call judges each preference met / partial / unmet.
-   **Python does the arithmetic** — the model never invents the number.
-5. **Iterate.** Members rate the plan *and tag the specific stops they disliked*.
-   Capped at 3 rounds, or earlier if the score stops moving.
-6. **Live trip.** A disruption triggers a one-shot replan with an **impact
-   preview** — what it costs each person — before anything is committed.
-7. **Learn.** After the trip, the agent compares what people *said* they wanted
-   against what they *did*, and moves the weights.
-
-## Architecture
-
-There is exactly **one** planning function:
-
-```python
-generate_plan(trip, members, trip_constraints, feedback_history,
-              ledger, disruption, locked_items, round_no)
-```
-
-Round 1, iteration rounds, and mid-trip replanning are the same call with
-different arguments populated. Do not add a second planner.
-
-```
-agent.py    all logic: 3 LLM calls, validator, scorer, ledger, external APIs
-app.py      the entire UI, 4 tabs
-seed/       profiles, trip preset, Trip 1 history
-fixtures/   canned plans + scores for DEMO_MODE
-```
-
-State lives in `st.session_state`. There is no database.
-
-### Scoring
-
-```
-person = 10 × Σ(weight × status) / Σ(weight)     met=1.0  partial=0.5  unmet=0.0
-group  = mean(person)
-floor  = min(person)          <- shown alongside the average, deliberately
-```
-
-The floor matters. A group average of 8.4 can hide someone at 3.
-
-### The weights are what learn
-
-Post-trip, the agent does not rewrite preference text — it moves the number.
-`historical sites: 0.9 → 0.4`, evidenced by "left the museum after 20 minutes
-and rated it 4/10". That single float is the entire cross-trip learning story.
-
-## Demo path
-
-| Beat | Action |
-|---|---|
-| The problem | **Setup** — expand the five profiles. Vegetarian, gluten-free, wheelchair, two non-drivers, a Tuesday client call. |
-| Round 1 | Generate. **5.7 group, Mei at 2.5** — the plan is unusable for her. Sam is at 10. |
-| Feedback | Switch users in the sidebar, tag specific stops, submit. |
-| Round 2 | **7.8. Sam drops to 5.5** — he is now carrying the compromise. Show the fairness ledger. |
-| Round 3 | **8.5.** Convergence fires: further rounds only move cost between people. Lock it. |
-| Live trip | Set the progress slider, hit **Check weather**, Replan. **Ana 9.1 → 4.8** in the impact preview. |
-| Learning | **Run post-mortem.** Sam said budget-conscious, rated the $210 hotel 9/10. Ana gets **no changes** — she was consistent. |
-| Payoff | Apply to profiles, replan. **Round 1 opens at 8.2 instead of 5.7.** |
-
-Ana having no updates is the point: the agent does not invent changes it cannot
-evidence.
-
-## Verification
+## Optional hosted API mode
 
 ```bash
-DEMO_MODE=1 python3 -c "
-import agent as A
-m = A.load_profiles()
-p = A._read_json(A.FIXTURES/'demo_plans.json')
-print('violations found in broken plan:', len(A.validate_hard(p['broken'], m)))
-print('violations in real plans:', [len(A.validate_hard(p[k], m)) for k in ['round1','round2','round3']])
-"
+cp .env.example .env
+# Set DEMO_MODE=0 and your own ANTHROPIC_API_KEY in .env.
+python -m streamlit run app.py --server.address 127.0.0.1
 ```
 
-Expected: `5` and `[0, 0, 0]`.
+The live planner uses Anthropic's hosted API; requests can incur provider
+charges. `TCAI_MODEL` selects the model ID. Check the provider's available
+[model IDs](https://platform.claude.com/docs/en/models/overview) for your account.
+The optional `GOOGLE_MAPS_API_KEY` enables static maps. Weather and local facts
+use Open-Meteo and Wikipedia. No credentials are included in the repository.
 
-## Notes and limits
+The app passes supplied trip, profile, feedback, and history text to the hosted
+provider in live mode. Use demo data for development and review. See
+[DATA.md](DATA.md) before using live integrations.
 
-- The Google Maps key is optional. Without it the app falls back to Streamlit's
-  built-in point map, which is uglier but works.
-- Open-Meteo forecasts ~15 days out. Beyond that `weather_for` clamps to the
-  furthest available day and flags the result `approx`.
-- Fun facts come from Wikipedia geosearch (keyless) — nearest article to a
-  coordinate, first sentence.
-- In `DEMO_MODE` the plans are canned, so they cannot genuinely adapt to learned
-  weights. The fixture skips the naive first draft instead, which produces the
-  same round-1 uplift you get live. With a real key the planner reads the
-  learned weights directly.
+## What works and what remains limited
+
+- One planning function handles initial planning, feedback rounds, and replanning.
+- Prototype Python checks inspect driver assignments and selected dietary and
+  accessibility wording. They do not verify venue facts or every free-text rule.
+- A preference score is computed in Python from weighted met/partial/unmet
+  statuses. These are application scores, not model accuracy benchmarks.
+- The feedback loop has a round limit and a score-change stopping rule. Neither
+  establishes that an itinerary is optimal.
+- The post-trip view changes application preference weights. It does not train
+  or fine-tune model weights.
+- State is held in Streamlit's session. There is no durable database, user
+  authentication, booking, payment, or guaranteed itinerary availability.
+- Offline updates and the next-trip improvement display are scripted fixtures;
+  they are not evidence of measured model improvement.
+
+See [ROADMAP.md](ROADMAP.md) for a proposed 26–34 hours of application work.
+
+## Checks
+
+```bash
+DEMO_MODE=1 python -m unittest discover -s tests -v
+python -m compileall -q app.py agent.py tests
+```
+
+The checks use committed demo fixtures and block external requests. They verify
+application behavior, not the quality of a hosted model. Live API calls and
+provider account access are not part of these checks.
+
+## Files and history
+
+- `app.py`: Streamlit UI and session state.
+- `agent.py`: prompts, hosted API calls, fixture selection, domain checks, and scoring.
+- `seed/` and `fixtures/`: authored demo profiles, trip history, itineraries, and scores.
+- `BUILD_PLAN.md`: original hackathon design document; some details differ from the implementation.
+- `tests/`: offline application regression checks.
+
+The existing July 2026 commits are retained, including the README contribution
+by `surbhisguha`. Authorship and ownership must not be inferred solely from the
+account that hosts the repository.
+
+## License status
+
+The original repository has no root LICENSE file. A release license still needs
+maintainer confirmation covering all code and demo fixtures, including other
+contributors' work. This preparation does not claim the project is already
+licensed under MIT or approved for a submission program.

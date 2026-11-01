@@ -252,6 +252,9 @@ def render_itinerary(plan: dict, upto: int | None = None) -> None:
 
 
 def render_map(plan: dict) -> None:
+    if A.DEMO_MODE:
+        st.info("External maps are disabled in the offline demo.", icon="🗺️")
+        return
     url = A.static_map_url(plan)
     if url:
         st.image(url, use_container_width=True)
@@ -288,7 +291,7 @@ with st.sidebar:
     if A.DEMO_MODE:
         st.warning("DEMO_MODE - canned plans, no API calls", icon="🎬")
     elif not A.api_key_present():
-        st.error("No ANTHROPIC_API_KEY - falling back to offline fixtures", icon="🔑")
+        st.error("No ANTHROPIC_API_KEY. Set DEMO_MODE=1 to use offline fixtures.", icon="🔑")
     else:
         st.success(f"Live · {A.MODEL}", icon="🤖")
 
@@ -346,7 +349,7 @@ with tab_setup:
     st.divider()
     st.subheader("The group")
     st.caption(
-        "Hard constraints are validated in code and never traded away. "
+        "Selected constraints have prototype checks; free-text rules are not fully verified. "
         "Soft preferences are weighted and scored."
     )
 
@@ -403,7 +406,7 @@ with tab_plan:
             )
         else:
             st.success(
-                f"All {len(A._all_hard(members()))} hard constraints verified in code.",
+                "Prototype checks found no violations. These checks inspect itinerary text only.",
                 icon="✅",
             )
 
@@ -563,7 +566,7 @@ with tab_trip:
                     )
                 else:
                     P["disruption_text"] = (
-                        "Storm warning on the coastal stretch. Outdoor stops unsafe."
+                        "Demo scenario (not a live forecast): storm warning on the coastal stretch."
                     )
                 st.rerun()
 
