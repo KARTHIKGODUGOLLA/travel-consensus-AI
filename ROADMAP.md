@@ -1,8 +1,9 @@
 # Proposed application roadmap
 
-These are candidate development items beyond submission preparation. The
-maintainer should confirm which work they independently intend to pursue.
-Estimates are not work already completed or authorization for paid hours.
+These development items are beyond submission preparation. The maintainer
+confirmed an intention to pursue at least 20 hours of application work from
+this roadmap. Estimates are not work already completed or authorization for
+paid hours.
 
 | Work | Acceptance criteria | Estimate |
 | --- | --- | --- |

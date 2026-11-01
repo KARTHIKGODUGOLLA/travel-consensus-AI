@@ -1,9 +1,10 @@
 # Data and integrations
 
 The build plan describes authored seed profiles with deliberate conflicts and
-an authored prior-trip history. The maintainer must confirm that every record
-in `seed/` and `fixtures/` is fictional or otherwise appropriate for public
-release before claiming that the repository contains no real personal data.
+an authored prior-trip history. The maintainer confirmed that the included
+profiles, preferences, prior-trip events, ratings, and other demo records in
+`seed/` and `fixtures/` are fictional and that all included material may be
+released publicly under the MIT license.
 
 ## Offline demo
 
@@ -31,5 +32,5 @@ The submission program's restrictions on other people's personal or regulated
 data remain relevant; this document does not certify production privacy.
 
 Keys belong in local environment variables or an ignored `.env` file. The MIT
-license, if later selected, would cover only material the maintainer has the
-right to license; external services retain their own terms.
+license covers the code and authored demo fixtures included with permission;
+external services retain their own terms.

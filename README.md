@@ -84,9 +84,8 @@ The existing July 2026 commits are retained, including the README contribution
 by `surbhisguha`. Authorship and ownership must not be inferred solely from the
 account that hosts the repository.
 
-## License status
+## License
 
-The original repository has no root LICENSE file. A release license still needs
-maintainer confirmation covering all code and demo fixtures, including other
-contributors' work. This preparation does not claim the project is already
-licensed under MIT or approved for a submission program.
+The code and included authored demo fixtures are released under the
+[MIT License](LICENSE). The maintainer confirmed permission to release all
+included contributions under MIT. Third-party services retain their own terms.
